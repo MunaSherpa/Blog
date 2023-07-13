@@ -3,7 +3,7 @@ const app = express();
 const ejs = require('ejs')
 
 
-const {sequelized, users } = require ('./model/index')
+const {sequelized, blogs } = require ('./model/index')
 
 const {blogForm} = require('./controller/authController')
 
@@ -14,7 +14,7 @@ app.set('view engine', 'ejs')
 
 app.get('/blog', (req, res) =>{
 
-    res.render('Blog')
+    res.render('Blog') // file ko name dako
 })
 
 

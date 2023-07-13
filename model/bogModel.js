@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    const Blog = sequelize.define("blog", {
+    const Blog = sequelize.define("blogs", { // "blog" vanara db name dako
       title: {
         type: DataTypes.STRING,
         allowNull: false,

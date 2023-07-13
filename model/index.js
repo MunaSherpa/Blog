@@ -28,7 +28,7 @@ db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
 
-db.users = require('./bogModel')(sequelize, DataTypes)
+db.blogs = require('./bogModel')(sequelize, DataTypes)
 
 
 db.sequelize.sync({ force: false }).then(() => {
