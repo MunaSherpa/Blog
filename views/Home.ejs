@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 100vh;
+            width: 100%;
+            background-color: #1d2f3c;
+            display: flex;
+            /* align-items: center; */
+            /* justify-content: center; */
+        }
+
+        .lolo {
+            width: 230px;
+            margin-left: 80px;
+            margin-top: 200px;
+            position: relative;
+            padding-left: 10px;
+            background-color: rgb(255, 255, 255);
+            height: 300px;
+            border-radius: 5px;
+        }
+
+        .title,
+        .subTitle,
+        .description {
+            border: 0;
+            padding: 10px 0;
+            border-bottom: 1px solid;
+            size: 100;
+        }
+
+        
+
+
+        
+
+        .lolo1 {
+            width: 230px;
+            margin-left: 80px;
+            margin-top: 200px;
+            position: relative;
+            padding-left: 10px;
+            background-color: rgb(255, 255, 255);
+            height: 300px;
+            border-radius: 5px;
+        }
+
+        .title,
+        .subTitle,
+        .description {
+            border: 0;
+            padding: 5px 0;
+            border-bottom: 1px solid;
+            size: 100;
+        }
+
+        
+     
+
+        
+
+        .lolo2 {
+            width: 230px;
+            margin-left: 80px;
+            margin-top: 200px;
+            position: relative;
+            padding-left: 10px;
+            background-color: rgb(255, 255, 255);
+            height: 300px;
+            border-radius: 5px;
+        }
+
+        .title,
+        .subTitle,
+        .description {
+            border: 0;
+            padding: 5px 0;
+            border-bottom: 1px solid;
+            size: 100;
+        }
+
+
+        .lolo3 {
+            width: 230px;
+            margin-left: 80px;
+            margin-top: 200px;
+            position: relative;
+            padding-left: 10px;
+            background-color: rgb(255, 255, 255);
+            height: 300px;
+            border-radius: 5px;
+        }
+
+        .title,
+        .subTitle,
+        .description {
+            border: 0;
+            padding: 5px 0;
+            border-bottom: 1px solid;
+            size: 100;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+        <div class="container">
+        <%  blogss.forEach((blog)=>{ %>
+            <div class="lolo">
+                <h1>
+                    <%- blog.title %>
+                </h1>
+                <br><br>
+                <h2>
+                    <%- blog.subTitle %>
+                </h2>
+                <br><br>
+                <h3>
+                    <%- blog.description %>
+                </h3>
+                <br><br>
+            </div>
+
+         <% }) %>
+
+            
+
+</body>
+
+</html>

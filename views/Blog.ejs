@@ -1,136 +1,95 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-  }
-  .container{
-    height: 100vh;
-    width: 100%;
-    background-color: #356182;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .form{
-    background: #FFF;
-    max-width: 400px;
-    width: 100%;
-    border-radius: 10px;
-    padding: 30px;
-    height: 500px;
-  }
-  header{
-    font-size: 28px;
-    font-weight: 600;
-    color: #232836;
-    text-align: center;
-  }
-  form{
-    margin-top: 30px;
-  }
-  .form .field{
-    position: relative;
-    height: 50px;
-    width: 100%;
-    margin-top: 20px;
-    border-radius: 6px;
-  }
-  .field input,
-  .field button{
-    height: 100%;
-    width: 100%;
-    border: none;
-    font-size: 16px;
-    font-weight: 400;
-    border-radius: 6px;
-    
-    
-  }
-  .field input{
-    outline: none;
-    padding: 0 15px;
-    border: 1px white;
-    background-color: #F4F4F2;
-  }
-  .field input:focus{
-    border-bottom-width: 2px;
-  }
-  
-  .field button{
-    color: #fff;
-    background-color:  #1189F9; 
-    transition: all 0.3s ease;
-    font-size: 21px;
-  }
-  
-  .form-link{
-    text-align: center;
-    margin-top: 30px;
-    
-  }
-  .form-link a{
-    font-size: 14px;
-    font-weight: 400;
-    color:#232836;
-  }
-  .form a{
-    color: #0171d3;
-    text-decoration: none;
-  }
-  .form a:hover{
-    text-decoration: underline;
-  }
-  .description{
-    
-    background-color: #F4F4F2;
-  }
-  
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=>, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      height: 100vh;
+      width: 100%;
+      background-color: #1d2f3c;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .lolo {
+      width: 250px;
+      margin-left: 50px;
+      margin-top: 0px;
+      position: relative;
+      padding-left: 15px;
+      background-color: rgb(255, 255, 255);
+      height: 420px;
+      border-radius: 10px;
+    }
+
+    .registerName,
+    .registerEmail,
+    .regPassword {
+      border: 0;
+      padding: 10px 0;
+      border-bottom: 1px solid;
+      size: 100;
+    }
+
+    .button1 {
+      background-color: black;
+      width: 94%;
+      border-radius: 5px;
+      height: 30px;
+
+      color: aliceblue;
+      text-align: center;
+      margin-left: 0px;
+      padding: 10px 30px;      
+      text-decoration: none;
+      
+
+    }
+    /* .create {
+      color: aliceblue;
+      text-align: center;
+      margin-left: 0px;
+      padding: 10px 30px;      
+      text-decoration: none;
+            
+
+    } */
+  </style>
 </head>
-<link rel="stylesheet" href="./Register.css">
 
 <body>
-    <div class="container forms">
-        <div class="form login">
-            <div class="form-content">
-                <form action="/blog" method="post">
-                <header>Blog</header>
-               
-                    <div class="field input-field">
-                        <input type="title"  name="name" placeholder="title" class="Title" />
-                    </div>
+  <form action="/blog" method="post"> <!--API-->
+    <div class="container">
+      <div class="lolo">
+        <h1>
+          <input type="text" class="registerName" name="name" placeholder="Title" size="30">
+        </h1>
+        <br><br>
+        <h2>
+          <input type="text" class="registerEmail" name="subname" placeholder="SubTitle" size="30">
+        </h2>
+        <br><br>
+        <h3>
+          <input type="text" class="regPassword" name="description" placeholder="Description" size="30">
 
-                    <div class="field input-field">
-                        <input type="subTitle" name="subname" placeholder="subTitle" class="SubTitle" />
-                        <i class='bx bx-hide eye-icon'></i>
-                    </div>
-                    <div class="description">
-                        <textarea id="description" name="description" placeholder="Description" ></textarea>
-                        <i class='bx bx-hide eye-icon'></i>
-                    </div>
+        </h3>
+        
+        <br><br>
 
-                    <div class="field button-field">
-                        <button  onClick={create}>Create</button>
 
-                    </div>
-
-                    <!-- <div class="form-link">
-                          <span>Don't have an account ? <a href="/register" class="signup-link">Register</a></span>
-                    </div> -->
-                  
-                </form>
-            </div>
-        </div>
+        <!-- <button class="button1"> <a href="/home" class="create">Create</a></button> -->
+        <button class="button1"> Create</button>
+      </div>
     </div>
+  </form>
+
+
+
 </body>
+
 </html>

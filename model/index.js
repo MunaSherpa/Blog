@@ -31,7 +31,7 @@ db.sequelize = sequelize;
 db.blogs = require('./bogModel')(sequelize, DataTypes)
 
 
-db.sequelize.sync({ force: false }).then(() => {
+db.sequelize.sync({ force: false }).then(() => { // true garo vana table hatidin and false la chi auti create garcha.
   console.log("yes re-sync done");
 });
 
