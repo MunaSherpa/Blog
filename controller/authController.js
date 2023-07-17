@@ -12,15 +12,6 @@ exports.blogForm = async(req, res) =>{
    })
    console.log(name, subname, description)
    res.redirect('home')
-
-
-
-   // const blogs = req.body
-   // await blogs.findAll({
-   //    blogs
-
-   // })
-   // console.log(blogs)
 }
 
 
