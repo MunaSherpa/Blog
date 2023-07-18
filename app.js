@@ -7,6 +7,7 @@ const {sequelized, blogs } = require ('./model/index')
 
 const {blogForm} = require('./controller/authController');
 const { where } = require('sequelize');
+const {getBlogByID} = require('./controller/authController')
 
 // const blogs = require ('./model/index')
 
@@ -32,14 +33,11 @@ app.get('/home', async(req, res) =>{
 })
 
 
-app.get('/blog/:id', (req, res) =>{
-    // const blogsss = await blogs.findAll()
-    // where.id
-    res.render('test')
-    
-    console.log(req.params.id)
-})
+app.get('/blog/:id', getBlogByID);
 
+// app.get('/blogs', (req, res) =>{ // yo vanako chi blogs vanna page ko route garako
+//     res.render('blogs')
+// })
 
 
 

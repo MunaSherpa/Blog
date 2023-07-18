@@ -80,25 +80,25 @@
 <body>
 
         <div class="container">
-        <%  blogss.forEach((blogss)=>{ %>
+        
             <div class="lolo">
                 <h2 class="title">
-                    <%- blogss.title %>
+                   <%- blogId[0].title %>
                 </h2>
               
                 <h4 class="subTitle">
-                    <%- blogss.subTitle %>
+                    <%- blogId[0].subTitle %>
                 </h4>
                
                 <p class="des">
-                    <%- blogss.description %>
+                    <%- blogId[0].description %>
                 </p>
 
-                <button class="see"><a href="/blog/<%- blogss.id %>">See More</a></button>
+               
                
             </div>
 
-         <% }) %>
+      
 
             
 

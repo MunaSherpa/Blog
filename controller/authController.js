@@ -1,3 +1,4 @@
+const { BelongsTo } = require("sequelize")
 const { blogs } = require("../model")
 
 
@@ -13,6 +14,23 @@ exports.blogForm = async(req, res) =>{
    console.log(name, subname, description)
    res.redirect('home')
 }
+
+exports.getBlogByID = async(req, res) =>{
+ 
+
+   const blogId = await blogs.findAll({
+       where:{
+           id:req.params.id
+       }
+   });
+   console.log(blogId);
+   res.render('blogs', {blogId});
+   
+}
+
+
+
+
 
 
 
